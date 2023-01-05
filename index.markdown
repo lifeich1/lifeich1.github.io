@@ -4,6 +4,4 @@
 
 layout: home
 ---
-# lifeich1's homepage
-
 1. Blog posts' archive.
