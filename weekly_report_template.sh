@@ -41,4 +41,5 @@ $(code_log)
 END
 
 git add $f
-echo ready: $f
+echo opening: $f
+emacsclient -n $f

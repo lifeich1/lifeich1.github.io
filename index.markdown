@@ -7,3 +7,4 @@ layout: home
 1. Blog posts' archive.
 2. [Weekly reports](/weekly_reports)
 3. [金阳録](/golden_yang)
+4. [分析小传](/analysis)
