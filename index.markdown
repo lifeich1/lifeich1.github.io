@@ -5,3 +5,4 @@
 layout: home
 ---
 1. Blog posts' archive.
+2. [Weekly reports](/weekly_reports)
