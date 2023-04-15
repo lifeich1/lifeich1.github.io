@@ -34,7 +34,12 @@ $(draw_log)
 $(code_log)
 \`\`\`
 
-### 音乐 (auto log todo)
+### 音乐
+
+#### log
+\`\`\`
+$(utils/wp-getlog.pl Music)
+\`\`\`
 
 ### 阅读
 
