@@ -49,6 +49,7 @@ categories: WeeklyReport
 该少娱乐了……
 
 1. 画
+2. [rspc issue/1](https://github.com/lifeich1/rspc/issues/1)
 1. 数学
 1. 音乐
 1. 1816 d,e 数学题有益
