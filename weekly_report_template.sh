@@ -2,6 +2,19 @@
 
 . env.sh
 
+thesec() {
+  if [ -n "$2" ]; then
+    cat << END
+### $1
+
+#### log
+\`\`\`
+$2
+\`\`\`
+END
+  fi
+}
+
 f=_drafts/Weekly_Report_$(date +%y_%U).md
 cat > $f << END
 ---
@@ -13,35 +26,11 @@ categories: WeeklyReport
 
 ### 健
 
-### 数学
+$(thesec 数学 "$(math_log)")
+$(thesec 画 "$(draw_log)")
+$(thesec "Coding compete" "$(code_log)")
 
-#### log
-\`\`\`
-$(math_log)
-\`\`\`
-
-### 画
-
-#### log
-\`\`\`
-$(draw_log)
-\`\`\`
-
-### Coding compete
-
-#### log
-\`\`\`
-$(code_log)
-\`\`\`
-
-### 音乐
-
-#### log
-\`\`\`
-$(utils/wp-getlog.pl Music)
-\`\`\`
-
-### 阅读
+$(./utils/wp-getlog.pl)
 
 ## 下周加强排序
 
