@@ -15,7 +15,11 @@ END
   fi
 }
 
-f=_drafts/Weekly_Report_$(date +%y_%U).md
+u=$(date +%U)
+if [ "$1" = "-b" ]; then
+  u=$(($u-1))
+fi
+f=_drafts/Weekly_Report_$(date +%y)_$u.md
 cat > $f << END
 ---
 layout: post
