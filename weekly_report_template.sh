@@ -15,7 +15,7 @@ END
   fi
 }
 
-u=$(date +%U)
+u=$(date +%V)
 if [ "$1" = "-b" ]; then
   u=$(($u-1))
 fi
