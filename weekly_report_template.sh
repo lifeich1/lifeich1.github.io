@@ -19,11 +19,12 @@ u=$(date +%V)
 if [ "$1" = "-b" ]; then
   u=$(($u-1))
 fi
-f=_drafts/Weekly_Report_$(date +%y)_$u.md
+name=$(date +%y)_$u
+f=_drafts/Weekly_Report_$name.md
 cat > $f << END
 ---
 layout: post
-title:  Weekly report $(date +%y-%U)
+title:  Weekly report $name
 date:   $(date "+%Y-%m-%d %T") +0800
 categories: WeeklyReport
 ---
